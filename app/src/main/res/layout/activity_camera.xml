@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".camera.CameraActivity"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp">
+
+    </androidx.camera.view.PreviewView>
+
+    <ImageButton
+        android:id="@+id/captureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:src="@drawable/ic_camera" />
+
+    <TextView
+        android:id="@+id/debugText"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#101010"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView_rec"
+        android:layout_width="150dp"
+        android:layout_height="198dp"
+        android:layout_above="@+id/captureButton"
+        android:layout_below="@+id/previewView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="8dp"
+        android:background="#2C7E57C2"
+        android:elevation="1dp"
+        tools:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+
+</RelativeLayout>
